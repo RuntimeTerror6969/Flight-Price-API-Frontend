@@ -121,6 +121,4 @@ npm test
 
 - Make sure the backend is running or deployed, and the `REACT_APP_API_URL` is correctly set.
 - For backend setup, visit the [Backend Repository](https://github.com/RuntimeTerror6969/Flight-Price-API-Backend).
-```
 
----
