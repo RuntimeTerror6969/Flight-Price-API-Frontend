@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Flight Price API Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React-based frontend for searching flight prices between cities.
+
+## Tech Stack
+- **React**: For building the user interface
+- **Tailwind CSS**: For styling
+- **Axios**: For making API requests
+
+## Features
+- Search flights by source and destination
+- Select date and number of passengers
+- User authentication (Login/Register)
+- Responsive design for mobile and desktop
+
+## Prerequisites
+- Node.js (v16+ recommended)
+- npm (v8+ recommended)
+
+## Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/RuntimeTerror6969/Flight-Price-API-Frontend.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd Flight-Price-API-Frontend
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Configure environment variables:**
+   - Copy the example `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Edit the `.env` file to set your backend API URL:
+     ```
+     REACT_APP_API_URL=https://your-backend-url.vercel.app/api
+     ```
+
+5. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+6. **Open the app in your browser at:**
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Deployment (Vercel)
+
+### Deploying the Frontend
+1. Push your repository to GitHub.
+2. Go to the [Vercel dashboard](https://vercel.com/).
+3. Click **Add New Project** and import your repository.
+4. Configure the environment variable in the Vercel dashboard:
+   - `REACT_APP_API_URL`: Set this to your backend API URL (e.g., `https://your-backend-url.vercel.app/api`)
+5. Deploy the app. Vercel will provide a live URL.
+
+---
+
+## Project Structure
+
+```plaintext
+frontend/
+├── public/
+│   └── index.html     # HTML template
+├── src/
+│   ├── App.js         # Main app entry point
+│   ├── components/    # UI components
+│   │   ├── FlightSearch.js
+│   │   └── FlightResults.js
+│   └── services/      # API services
+│       └── api.js
+└── package.json       # Project dependencies and scripts
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the root directory with the following:
+
+```
+REACT_APP_API_URL=https://your-backend-url.vercel.app/api
+```
+
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
+### Start Development Server
+```bash
+npm start
+```
 
-### `npm start`
+### Build for Production
+```bash
+npm run build
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Run Tests
+```bash
+npm test
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Additional Notes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Make sure the backend is running or deployed, and the `REACT_APP_API_URL` is correctly set.
+- For backend setup, visit the [Backend Repository](https://github.com/RuntimeTerror6969/Flight-Price-API-Backend).
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
