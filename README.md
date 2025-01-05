@@ -1,5 +1,3 @@
----
-
 ### **Frontend README.md**
 ```markdown
 # Flight Price API Frontend
