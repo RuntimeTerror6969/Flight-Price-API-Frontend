@@ -15,10 +15,14 @@ export const register = async (email, password) => {
 };
 
 export const login = async (email, password) => {
-  const response = await axios.post(`${API_URL}/auth/login`, {
-    email,
-    password,
-  });
+  const response = await axios.post(
+    `${API_URL}/auth/login`,
+    {
+      email,
+      password,
+    },
+    { withCredentials: true }
+  );
   if (response.data.token) {
     localStorage.setItem("user", JSON.stringify(response.data));
   }
