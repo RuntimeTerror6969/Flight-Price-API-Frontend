@@ -1,5 +1,3 @@
-Here are two `.md` files for your **frontend** and **backend** projects that you can directly copy and paste into their respective `README.md` files.
-
 ---
 
 ### **Frontend README.md**
