@@ -37,7 +37,7 @@ React-based frontend for searching flight prices between cities.
 4. **Configure environment variables:**
    - When running locally, change `API_URL` to `http://localhost:5000/api`:
      ```bash
-     const API_URL = "http://localhost:5000/api";
+     const API_URL = "http://localhost:5000/api"
      ```
    - Edit the `.env` file to set your backend API URL:
      ```
