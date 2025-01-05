@@ -1,19 +1,17 @@
-### **Frontend README.md**
-```markdown
 # Flight Price API Frontend
 
 React-based frontend for searching flight prices between cities.
 
 ## Tech Stack
-- **React**: For building the user interface.
-- **Tailwind CSS**: For styling.
-- **Axios**: For making API requests.
+- **React**: For building the user interface
+- **Tailwind CSS**: For styling
+- **Axios**: For making API requests
 
 ## Features
-- Search flights by source and destination.
-- Select date and number of passengers.
-- User authentication (Login/Register).
-- Responsive design for mobile and desktop.
+- Search flights by source and destination
+- Select date and number of passengers
+- User authentication (Login/Register)
+- Responsive design for mobile and desktop
 
 ## Prerequisites
 - Node.js (v16+ recommended)
@@ -21,22 +19,22 @@ React-based frontend for searching flight prices between cities.
 
 ## Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/RuntimeTerror6969/Flight-Price-API-Frontend.git
    ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
    ```bash
    cd Flight-Price-API-Frontend
    ```
 
-3. Install dependencies:
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-4. Configure environment variables:
+4. **Configure environment variables:**
    - Copy the example `.env.example` file to `.env`:
      ```bash
      cp .env.example .env
@@ -46,12 +44,12 @@ React-based frontend for searching flight prices between cities.
      REACT_APP_API_URL=https://your-backend-url.vercel.app/api
      ```
 
-5. Start the development server:
+5. **Start the development server:**
    ```bash
    npm start
    ```
 
-6. Open the app in your browser at:
+6. **Open the app in your browser at:**
    ```
    http://localhost:3000
    ```
@@ -65,7 +63,7 @@ React-based frontend for searching flight prices between cities.
 2. Go to the [Vercel dashboard](https://vercel.com/).
 3. Click **Add New Project** and import your repository.
 4. Configure the environment variable in the Vercel dashboard:
-   - `REACT_APP_API_URL`: Set this to your backend API URL (e.g., `https://your-backend-url.vercel.app/api`).
+   - `REACT_APP_API_URL`: Set this to your backend API URL (e.g., `https://your-backend-url.vercel.app/api`)
 5. Deploy the app. Vercel will provide a live URL.
 
 ---
@@ -121,4 +119,6 @@ npm test
 
 - Make sure the backend is running or deployed, and the `REACT_APP_API_URL` is correctly set.
 - For backend setup, visit the [Backend Repository](https://github.com/RuntimeTerror6969/Flight-Price-API-Backend).
+
+---
 
