@@ -1,4 +1,3 @@
-// frontend/src/components/FlightSearch.js
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -17,8 +16,12 @@ const FlightSearch = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const flights = await searchFlights(searchData);
-    setResults(flights);
+    try {
+      const flights = await searchFlights(searchData);
+      setResults(flights);
+    } catch (error) {
+      console.error("Search failed:", error);
+    }
   };
 
   return (

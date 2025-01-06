@@ -1,4 +1,3 @@
-// frontend/src/components/FlightResults.js
 import React from "react";
 
 const FlightResults = ({ flights }) => {

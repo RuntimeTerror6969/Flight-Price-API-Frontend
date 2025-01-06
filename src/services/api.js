@@ -13,3 +13,12 @@ export const searchFlights = async (searchData) => {
     throw error;
   }
 };
+export const getFlightPrices = async (params) => {
+  try {
+    const response = await axios.get(`${API_URL}/prices`, { params });
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching prices:", error);
+    throw error;
+  }
+};
